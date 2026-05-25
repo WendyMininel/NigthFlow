@@ -1,0 +1,209 @@
+.event-card {
+  background: #000000;
+  border: 2px solid #00bfff;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  width: 96%;
+  aspect-ratio: 5 / 4.3;
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.6);
+  display: flex;
+  flex-direction: column;
+}
+
+.event-card:hover {
+  transform: translateY(-3px);
+  border-color: #1e90ff;
+  box-shadow: 0 0 25px rgba(0, 191, 255, 0.8);
+}
+
+.event-image-container {
+  height: 120px;
+  overflow: hidden;
+}
+
+.event-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover .event-image {
+  transform: scale(1.05);
+}
+
+.event-info {
+  padding: 15px 12px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.event-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.event-left {
+  flex: 2;
+}
+
+.event-date {
+  font-size: 0.9rem;
+  color: #00bfff;
+  margin-bottom: 6px;
+}
+
+.event-location {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin-bottom: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.event-price {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #00ff00;
+}
+
+.event-right {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-end;
+  flex: 1;
+}
+
+.learn-more-btn {
+  background: transparent;
+  border: 1px solid #00bfff;
+  color: #00bfff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.8rem;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.learn-more-btn:hover {
+  background: #00bfff;
+  color: #000000;
+}
+
+.cart-icon {
+  background: transparent;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.cart-icon:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1200px) {
+  .event-image-container {
+    height: 115px;
+  }
+  
+  .event-info {
+    padding: 12px 10px;
+  }
+  
+  .event-name {
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+  }
+  
+  .event-date {
+    font-size: 0.65rem;
+    margin-bottom: 5px;
+  }
+  
+  .event-location {
+    font-size: 0.6rem;
+    margin-bottom: 5px;
+  }
+  
+  .event-price {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .event-image-container {
+    height: 110px;
+  }
+  
+  .event-info {
+    padding: 10px 8px;
+  }
+  
+  .event-name {
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .event-card {
+    max-width: 100%;
+  }
+  
+  .event-image-container {
+    height: 140px;
+  }
+  
+  .event-info {
+    padding: 15px 12px;
+  }
+  
+  .event-name {
+    font-size: 0.9rem;
+    white-space: normal;
+  }
+  
+  .event-location {
+    white-space: normal;
+    font-size: 0.7rem;
+  }
+  
+  .event-date {
+    font-size: 0.75rem;
+  }
+  
+  .event-price {
+    font-size: 0.85rem;
+  }
+  
+  .learn-more-btn {
+    font-size: 0.7rem;
+    padding: 6px 12px;
+  }
+  
+  .cart-icon {
+    font-size: 1.1rem;
+  }
+}

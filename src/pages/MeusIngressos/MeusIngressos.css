@@ -1,0 +1,350 @@
+.meus-ingressos-page {
+  min-height: 100vh;
+  background-color: #000000;
+  padding: 20px;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  background: transparent;
+}
+
+.back-arrow {
+  color: #00bfff;
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 1;
+  transition: all 0.3s ease;
+}
+
+.back-arrow:hover {
+  transform: translateX(-5px);
+}
+
+.page-header h1 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.filtros-container {
+  margin-bottom: 40px;
+  background: transparent;
+  padding: 0;
+}
+
+.filtros-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.filtro-btn {
+  padding: 10px 25px;
+  background: #000000;
+  border: 2px solid #9b59b6;
+  border-radius: 25px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  font-weight: bold;
+  box-shadow: 0 0 12px rgba(155, 89, 182, 0.6);
+}
+
+.filtro-btn:hover {
+  border-color: #00bfff;
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px #00bfff;
+}
+
+.filtro-btn.active {
+  border-color: #00bfff;
+  background: #000000;
+  color: #00bfff;
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.7);
+}
+
+.ingressos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.ingresso-card {
+  background: #000000;
+  border: 2px solid #00bfff;
+  border-radius: 15px;
+  padding: 25px;
+  display: flex;
+  gap: 25px;
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.6);
+}
+
+.ingresso-card:hover {
+  transform: translateY(-5px);
+  border-color: #1e90ff;
+  box-shadow: 0 0 30px rgba(0, 191, 255, 0.9);
+}
+
+.ingresso-qrcode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  min-width: 130px;
+}
+
+.qrcode-img {
+  width: 120px;
+  height: 120px;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.baixar-qrcode-btn {
+  background: #6a0dad;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  box-shadow: 0 0 12px rgba(106, 13, 173, 0.6);
+}
+
+.baixar-qrcode-btn:hover {
+  background: #8b00ff;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(106, 13, 173, 0.9);
+}
+
+.ingresso-info {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.info-left {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+}
+
+.evento-imagem-mini {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #3a3a5e;
+}
+
+.info-detalhes {
+  flex: 1;
+}
+
+.artista-nome {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  border-left: 3px solid #00bfff;
+  padding-left: 10px;
+}
+
+.info-item {
+  color: #cccccc;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.info-label {
+  font-weight: bold;
+  color: #ffffff;
+  min-width: 140px;
+}
+
+.preco-total {
+  color: #00ff00;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.status-badge.valido {
+  background: #00ff00;
+  color: #000000;
+}
+
+.status-badge.passado {
+  background: #ff4444;
+  color: #ffffff;
+}
+
+.acoes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 140px;
+  justify-content: center;
+}
+
+.acao-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.qrcode-btn {
+  background: #f39c12;
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(243, 156, 18, 0.6);
+}
+
+.qrcode-btn:hover {
+  background: #e67e22;
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(243, 156, 18, 0.9);
+}
+
+.saiba-mais-btn {
+  background: #3498db;
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(52, 152, 219, 0.6);
+}
+
+.saiba-mais-btn:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(52, 152, 219, 0.9);
+}
+
+.excluir-btn {
+  background: #e74c3c;
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(231, 76, 60, 0.6);
+}
+
+.excluir-btn:hover {
+  background: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(231, 76, 60, 0.9);
+}
+
+.nenhum-ingresso {
+  text-align: center;
+  padding: 80px 60px;
+  background: #000000;
+  border: 2px solid #ff69b4;
+  border-radius: 15px;
+  color: #888;
+  font-size: 1.1rem;
+  box-shadow: 0 0 15px rgba(255, 105, 180, 0.6);
+}
+
+.comprar-ingressos-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #00bfff;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.6);
+}
+
+.comprar-ingressos-btn:hover {
+  background: #1e90ff;
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(0, 191, 255, 0.9);
+}
+
+@media (max-width: 968px) {
+  .ingresso-card {
+    flex-direction: column;
+  }
+  
+  .ingresso-qrcode {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .info-left {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .artista-nome {
+    border-left: none;
+    border-top: 3px solid #00bfff;
+    padding-top: 10px;
+    text-align: center;
+  }
+  
+  .info-item {
+    justify-content: center;
+  }
+  
+  .acoes-container {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .filtros-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .ingresso-info {
+    flex-direction: column;
+  }
+  
+  .evento-imagem-mini {
+    width: 100%;
+    height: auto;
+  }
+  
+  .acoes-container {
+    flex-direction: column;
+  }
+  
+  .info-item {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .info-label {
+    min-width: auto;
+  }
+}
