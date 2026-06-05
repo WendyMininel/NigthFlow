@@ -45,8 +45,12 @@ Ao clicar em **"Meus ingressos"** ou **"Carrinho"** → Permanece na área do co
 ## Tecnologias
 
 - JavaScript
+- Java
 - React
 - Node.js
+- MySQL
+- Html
+- Css
 
 ---
 
@@ -56,13 +60,13 @@ Ao clicar em **"Meus ingressos"** ou **"Carrinho"** → Permanece na área do co
 |------|------------|--------|------------|------------|
 | 1 | Como organizador, quero me cadastrar e fazer login na plataforma, para acessar as funcionalidades de gestão dos meus eventos. | 1 | Alta | 16h |
 | 2 | Como organizador, quero criar um novo evento informando título, data, local, gênero musical, descrição e valor do ingresso para disponibilizá-lo aos participantes. | 1 | Alta | 25h |
-| 3 | Como participante, quero visualizar uma lista de eventos disponíveis e comprar ingressos online, escolhendo a quantidade e realizando o pagamento, para garantir minha entrada. | 1 | Alta | 28h |
+| 3 | Como participante, quero visualizar uma lista de eventos disponíveis e comprar ingressos online, escolhendo a quantidade e realizando o pagamento, para garantir minha entrada. | 2 | Alta | 28h |
 | 4 | Como organizador, quero visualizar a lista de inscritos por evento com opção de exportar para Excel, para gerenciar os participantes e realizar check-in. | 2 | Média | 25h |
-| 5 | Como organizador, quero realizar o check-in dos participantes na entrada da festa, validando o ingresso e marcando presença, para controlar o acesso e evitar fraudes. | 2 | Média | 27h |
-| 6 | Como organizador, quero criar um cronograma de atividades para o evento com horários e responsáveis, para orientar os participantes. | 2 | Média | 27h |
-| 7 | Como organizador, quero visualizar relatórios completos (quantidade de ingressos vendidos, comparecimento), para avaliar o sucesso da festa. | 3 | Alta | 30h |
+| 5 | Como organizador, quero visualizar relatórios completos (quantidade de ingressos vendidos, comparecimento), para avaliar o sucesso da festa. | 3 | Alta | 30h |
+| 6 | Como organizador, quero que meu site seja responsivo para poder visualizar em diversos dispositivos | 3 | Alta | 40h |
 
-**Total de horas estimadas:** 178h
+
+**Total de horas estimadas:** 164h
 
 ---
 
@@ -73,25 +77,25 @@ Ao clicar em **"Meus ingressos"** ou **"Carrinho"** → Permanece na área do co
 |------|----------------|-------|
 | 1 | Cadastro e Login | 16h |
 | 2 | Criação de Eventos | 25h |
-| 3 | Compra de Ingressos | 28h |
 
-**Total Sprint 1:** 69h
+**Total Sprint 1:** 41h
 
 ### Sprint 2 (Prioridade Média)
 | Rank | Funcionalidade | Horas |
 |------|----------------|-------|
+| 3 | Compra de Ingressos | 28h |
 | 4 | Lista de inscritos + Exportar Excel | 25h |
-| 5 | Check-in de participantes | 27h |
-| 6 | Cronograma de atividades | 27h |
 
-**Total Sprint 2:** 79h
+**Total Sprint 2:** 53h
 
 ### Sprint 3 (Prioridade Alta)
 | Rank | Funcionalidade | Horas |
 |------|----------------|-------|
-| 7 | Relatórios completos | 30h |
+| 5 | Relatórios completos | 30h |
+| 6 | Responsividade | 40h |
 
-**Total Sprint 3:** 30h
+
+**Total Sprint 3:** 70h
 
 
 **Para melhor detalhamento das sprints:** [Clique aqui](https://docs.google.com/spreadsheets/d/161dRP5XLzue6MtjPKxvDc8HS_kAyimDGgbeQHeZ55jc/edit?gid=2038054660#gid=2038054660)
