@@ -1,0 +1,32 @@
+.App {
+  min-height: 100vh;
+  background-color: #000000;
+}
+
+.main-content {
+  margin-top: 120px;
+  min-height: calc(100vh - 120px);
+}
+
+.home,
+.criar-evento-page,
+.meus-ingressos-page,
+.carrinho-page,
+.perfil-page,
+.meus-eventos-page,
+.dados-page,
+.detalhes-page {
+  padding-top: 0;
+}
+
+@media (max-width: 900px) {
+  .main-content {
+    margin-top: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    margin-top: 150px;
+  }
+}

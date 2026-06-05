@@ -1,0 +1,137 @@
+.home {
+  min-height: 100vh;
+  background-color: #000000;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 0 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+  position: relative;
+  z-index: 10;
+}
+
+.search-wrapper {
+  flex-shrink: 0;
+}
+
+.filters-wrapper {
+  flex: 1;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 30px 20px 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  color: #ffffff;
+}
+
+.error-container {
+  text-align: center;
+  padding: 60px;
+  background: #000000;
+  border: 2px solid #ff4444;
+  border-radius: 15px;
+  color: #ff4444;
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+.retry-btn {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #00bfff;
+  border: none;
+  border-radius: 25px;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.retry-btn:hover {
+  background: #1e90ff;
+  transform: translateY(-2px);
+}
+
+.nenhum-evento {
+  text-align: center;
+  padding: 60px;
+  background: #000000;
+  border: 2px solid #ff69b4;
+  border-radius: 15px;
+  color: #888;
+  grid-column: 1 / -1;
+}
+
+.recarregar-btn {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #00bfff;
+  border: none;
+  border-radius: 25px;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.recarregar-btn:hover {
+  background: #1e90ff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1200px) {
+  .events-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .top-bar {
+    flex-wrap: wrap;
+  }
+  
+  .search-wrapper {
+    width: 100%;
+  }
+  
+  .filters-wrapper {
+    width: 100%;
+  }
+  
+  .events-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .events-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 15px;
+  }
+  
+  .top-bar {
+    padding: 0 15px;
+  }
+}
