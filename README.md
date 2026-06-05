@@ -105,16 +105,15 @@ Ao clicar em **"Meus ingressos"** ou **"Carrinho"** → Permanece na área do co
 
 2.  **Executando o Back-end (Node):**
     ```bash
-    cd backend
     npm install
+    npm install express mysql2 cors body-parser multer
+    (conectar com o sql digitando sua senha)
     node server.js
     ```
 
 3.  **Executando o Front-end (React):**
     Em um novo terminal:
     ```bash
-    cd frontend
-    npm install
-    npm run dev
+    npm start
     ```
-4.  **Acesse o link local gerado pelo Vite**
+4.  **Acesse o link local**
